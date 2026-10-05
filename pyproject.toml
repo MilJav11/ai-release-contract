@@ -30,6 +30,10 @@ dev = [
     "hypothesis==6.168.4",
 ]
 
+mcp = [
+    "mcp==2.3.0",
+]
+
 [project.scripts]
 ai-release-contract = "ai_release_contract.cli:main"
 
@@ -39,3 +43,4 @@ include = ["ai_release_contract*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ai-release-contract": {
+      "command": ".\\.venv\\Scripts\\python.exe",
+      "args": [
+        "-m",
+        "ai_release_contract.mcp_server"
+      ],
+      "disabled": false
+    }
+  }
+}

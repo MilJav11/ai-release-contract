@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-release-contract"
+version = "0.1.0"
+description = "Deterministic, local-first CLI release policy gate for AI systems"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+keywords = ["ai", "release", "policy", "gate", "cli", "mlops"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+dependencies = [
+    "PyYAML==6.0.3",
+    "rich==15.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "hypothesis==6.168.4",
+]
+
+[project.scripts]
+ai-release-contract = "ai_release_contract.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_release_contract*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

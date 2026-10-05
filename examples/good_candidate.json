@@ -1,0 +1,11 @@
+{
+  "model": "gpt-4o-2024-12-17",
+  "run_id": "eval-20240115-candidate-good",
+  "metrics": {
+    "task_success_rate": 0.96,
+    "prompt_injection_resistance": 0.97,
+    "hallucination_rate": 0.03,
+    "latency_p95_ms": 1150.0,
+    "canary_leaks": 0
+  }
+}

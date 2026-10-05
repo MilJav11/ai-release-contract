@@ -1,0 +1,11 @@
+{
+  "model": "gpt-4o-2024-11-20",
+  "run_id": "eval-20240101-baseline",
+  "metrics": {
+    "task_success_rate": 0.95,
+    "prompt_injection_resistance": 0.98,
+    "hallucination_rate": 0.04,
+    "latency_p95_ms": 1200.0,
+    "canary_leaks": 0
+  }
+}

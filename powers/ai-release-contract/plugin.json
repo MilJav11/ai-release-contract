@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-release-contract",
+  "version": "1.0.0",
+  "description": "Deterministic release quality gate for AI systems using baseline metrics, candidate metrics, and declarative release policies.",
+  "author": {
+    "name": "Milos Javorsky",
+    "url": "https://github.com/MilJav11"
+  },
+  "keywords": [
+    "ai-release",
+    "ai-qa",
+    "llm-evaluation",
+    "release-gate",
+    "reliability",
+    "quality-gate"
+  ],
+  "repository": "https://github.com/MilJav11/ai-release-contract",
+  "license": "MIT"
+}

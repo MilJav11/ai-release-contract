@@ -43,4 +43,3 @@ include = ["ai_release_contract*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-

@@ -1,0 +1,17 @@
+{
+    "version":  "v1",
+    "hooks":  [
+                  {
+                      "name":  "Run AI Release Contract tests",
+                      "description":  "Run the deterministic pytest suite whenever a Python file is saved.",
+                      "trigger":  "PostFileSave",
+                      "matcher":  "\\.py$",
+                      "action":  {
+                                     "type":  "command",
+                                     "command":  "python -m pytest -q"
+                                 },
+                      "timeout":  60,
+                      "enabled":  true
+                  }
+              ]
+}
